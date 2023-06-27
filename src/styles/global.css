@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  @layer base {
+    .h1 {
+      @apply text-burgundy text-7xl font-extrabold -tracking-[2px] leading-[80px];
+    }
+
+    .h2 {
+      @apply text-burgundy text-[56px] font-extrabold -tracking-[1px] leading-[64px];
+    }
+
+    .h3 {
+      @apply text-burgundy text-[40px] font-extrabold leading-[48px];
+    }
+
+    .h4 {
+      @apply text-burgundy text-2xl font-bold leading-8;
+    }
+
+    .h5 {
+      @apply text-orange text-base font-bold tracking-[3px] leading-8 uppercase;
+    }
+
+    .label {
+      @apply text-burgundy text-xs font-bold uppercase;
+    }
+
+    .text-big {
+      @apply text-burgundy text-xl leading-8;
+    }
+
+    .text {
+      @apply text-burgundy text-base leading-8;
+    }
+
+    .text-gray {
+      @apply text-burgundy opacity-[64%] text-base leading-8;
+    }
+
+    .text-small {
+      @apply text-burgundy opacity-[64%] text-sm leading-6;
+    }
+  }
+}
+
+body {
+  font-family: "Epilogue";
+  background-color: #fdf0e9;
+}
