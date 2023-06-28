@@ -2,9 +2,9 @@ import * as React from "react";
 import Navbar from "./Navbar";
 
 const Header = () => {
-    return <div className="bg-purple">
+    return <header className="bg-purple">
       <Navbar/>
-  </div>;
+  </header>;
 };
 
 export default Header;

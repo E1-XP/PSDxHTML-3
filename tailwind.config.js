@@ -10,9 +10,16 @@ module.exports = {
         white: "#FFFFFF",
         sandy: "#FDF0E9",
         orange: "#EF6D58",
-        burgundy:"#391400",
+        burgundy: "#391400",
         purple: "#28293E",
       },
+      boxShadow: {
+        button: "0px 3px 9px 0px rgba(57, 20, 0, 0.08)",
+      },
+      borderColor: {
+        buttonOutline: "rgba(255, 255, 255, 0.30)",
+      },
+      padding: { min: "23px" },
     },
   },
   plugins: [],
