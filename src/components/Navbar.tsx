@@ -16,12 +16,12 @@ const Navbar = () => {
         <StaticImage
           src="../images/logo.svg"
           alt="Agency"
-          className="pointer-events-none"
+          className="pointer-events-none w-12 h-12"
         />
         Agency
       </h1>
-      <div className="items-center hidden lg:flex">
-        <ul className="flex">
+      <div className="items-center hidden lg:flex w-full">
+        <ul className="flex mx-auto w-1/2 justify-between">
           {menuItems.map((item) => (
             <li className="text text-white" key={item}>
               <Link to={item}>{item}</Link>
