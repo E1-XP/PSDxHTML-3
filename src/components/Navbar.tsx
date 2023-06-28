@@ -20,10 +20,17 @@ const Navbar = () => {
         />
         Agency
       </h1>
-      <div className="items-center hidden lg:flex w-full">
-        <ul className="flex mx-auto w-1/2 justify-between">
+      <div
+        className={`items-center fixed lg:static flex w-full transition gap-10 lg:gap-0 bg-purple flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[15vh] lg:pt-0 lg:justify-normal" ${
+          isMenuOpen ? "opacity-100" : "opacity-0 lg:opacity-100"
+        }`}
+      >
+        <ul className="flex mx-auto w-1/2 justify-between gap-10 lg:gap-0 flex-col lg:flex-row text-center lg:text-left">
           {menuItems.map((item) => (
-            <li className="text text-white" key={item}>
+            <li
+              className="text text-3xl lg:text-base text-white hover:opacity-75 transition"
+              key={item}
+            >
               <Link to={item}>{item}</Link>
             </li>
           ))}
