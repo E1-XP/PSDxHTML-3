@@ -17,25 +17,28 @@ const Header = () => {
 
     quoteText: `"Put themselves in the merchant's shoes"`,
     quoteAuthor: "Meta Inc.",
+    reviewAltText: "Reviewer from Meta Inc. company",
   };
 
   return (
     <header className="bg-purple min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex flex-col md:flex-row max-w-[1216px] mx-auto px-min grow">
-        <div className="md:w-1/2 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row max-w-[1216px] mx-auto px-min grow gap-4">
+        <div className="md:w-1/2 flex items-start lg:items-center justify-center md:mt-[5vw] lg:mt-0">
           <StaticImage
             src="./../images/pic.svg"
             alt="Workflow illustration"
             className="pointer-events-none"
           />
         </div>
-        <div className="md:w-1/2 md:-order-1 flex flex-col gap-6 mt-[108px]">
+        <div className="md:w-1/2 md:-order-1 flex flex-col gap-5 lg:gap-6 mt-4 lg:mt-[108px]">
           <p className="h5">{data.tagText}</p>
-          <h2 className="h1 whitespace-pre-wrap text-white">
+          <h2 className="h2 lg:h1 whitespace-pre-wrap !text-white  before:lg:content-[url('./../images/Star.svg')] relative before:absolute z-[1] before:-z-[1] before:left-[278px] before:-top-[31px]">
             {data.heading.replace("<br/>", "\n")}
           </h2>
-          <p className="text text-white opacity-[64%]">{data.subtitle}</p>
+          <p className="text text-white opacity-[64%] -mt-2 lg:mt-0">
+            {data.subtitle}
+          </p>
           <div className="flex items-center gap-[46px] mt-2.5">
             <Button>{data.buttonText}</Button>
             <Link
@@ -45,17 +48,21 @@ const Header = () => {
               {data.helperText}
             </Link>
           </div>
-          <div className="flex mt-auto mb-16 gap-4">
-            <div className="bg-magenta rounded-full w-12 h-12 flex items-center justify-center">
+          <div className="flex lg:mt-auto mt-7 mb-8 lg:mb-16 gap-4">
+            <div className="bg-magenta rounded-full w-12 h-12 flex shrink-0 items-center justify-center">
               <StaticImage
                 src="./../images/Bitmap.png"
-                alt="Reviewer from Meta Inc. company"
+                alt={data.reviewAltText}
                 className="pointer-events-none"
               />
             </div>
             <div className="flex flex-col justify-between">
-              <p className="text leading-none text-white opacity-[64%]">{data.quoteText}</p>
-              <span className="text leading-none text-white">{data.quoteAuthor}</span>
+              <p className="text lg:leading-none text-white opacity-[64%]">
+                {data.quoteText}
+              </p>
+              <span className="text lg:leading-none text-white">
+                {data.quoteAuthor}
+              </span>
             </div>
           </div>
         </div>
