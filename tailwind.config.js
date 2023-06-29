@@ -11,6 +11,7 @@ module.exports = {
         sandy: "#FDF0E9",
         orange: "#EF6D58",
         burgundy: "#391400",
+        magenta:'#B550F6',
         purple: "#28293E",
       },
       boxShadow: {

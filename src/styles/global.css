@@ -21,7 +21,7 @@
     }
 
     .h5 {
-      @apply text-orange text-base font-bold tracking-[3px] leading-8 uppercase;
+      @apply text-orange text-base font-normal tracking-[3px] leading-8 uppercase;
     }
 
     .label {
@@ -29,19 +29,19 @@
     }
 
     .text-big {
-      @apply text-burgundy text-xl leading-8;
+      @apply text-burgundy font-normal text-xl leading-8;
     }
 
     .text {
-      @apply text-burgundy text-base leading-8;
+      @apply text-burgundy font-normal text-base leading-8;
     }
 
     .text-gray {
-      @apply text-burgundy opacity-[64%] text-base leading-8;
+      @apply text-burgundy font-normal opacity-[64%] text-base leading-8;
     }
 
     .text-small {
-      @apply text-burgundy opacity-[64%] text-sm leading-6;
+      @apply text-burgundy font-normal opacity-[64%] text-sm leading-6;
     }
   }
 }
