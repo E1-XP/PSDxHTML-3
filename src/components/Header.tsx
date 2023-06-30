@@ -24,14 +24,14 @@ const Header = () => {
     <header className="bg-purple min-h-screen flex flex-col">
       <Navbar />
       <div className="flex flex-col md:flex-row max-w-[1216px] mx-auto px-min grow gap-4">
-        <div className="md:w-1/2 flex items-start lg:items-center justify-center md:mt-[5vw] lg:mt-0">
+        <div className="md:w-1/2 flex items-start lg:items-center md:mt-[100px] lg:mt-0 justify-center">
           <StaticImage
             src="./../images/pic.svg"
             alt="Workflow illustration"
             className="pointer-events-none"
           />
         </div>
-        <div className="md:w-1/2 md:-order-1 flex flex-col gap-5 lg:gap-6 mt-4 lg:mt-[108px]">
+        <div className="md:w-1/2 md:-order-1 flex flex-col gap-5 md:gap-6 mt-4 md:mt-[108px]">
           <p className="h5">{data.tagText}</p>
           <h2 className="h2 lg:h1 whitespace-pre-wrap !text-white  before:lg:content-[url('./../images/Star.svg')] relative before:absolute z-[1] before:-z-[1] before:left-[278px] before:-top-[31px]">
             {data.heading.replace("<br/>", "\n")}
@@ -48,7 +48,7 @@ const Header = () => {
               {data.helperText}
             </Link>
           </div>
-          <div className="flex lg:mt-auto mt-7 mb-8 lg:mb-16 gap-4">
+          <div className="flex md:mt-auto mt-7 mb-8 md:mb-16 gap-4">
             <div className="bg-magenta rounded-full w-12 h-12 flex shrink-0 items-center justify-center">
               <StaticImage
                 src="./../images/Bitmap.png"
