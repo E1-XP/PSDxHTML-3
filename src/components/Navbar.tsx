@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex max-w-[1216px] w-full mx-auto px-min py-4 justify-between items-center">
-      <h1 className="flex h4 text-white gap-3.5 items-center">
+      <h1 className="flex h4 text-white gap-3.5 items-center z-50">
         <StaticImage
           src="../images/logo.svg"
           alt="Agency"
@@ -21,7 +21,7 @@ const Navbar = () => {
         Agency
       </h1>
       <div
-        className={`items-center fixed lg:static flex w-full transition gap-10 lg:gap-0 bg-purple flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[15vh] lg:pt-0 lg:justify-normal" ${
+        className={`items-center fixed lg:static flex w-full transition gap-10 lg:gap-0 bg-purple flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[15vh] lg:pt-0 lg:justify-normal z-40 ${
           isMenuOpen ? "opacity-100" : "opacity-0 lg:opacity-100"
         }`}
       >
@@ -42,7 +42,7 @@ const Navbar = () => {
       <Hamburger
         isOpen={isMenuOpen}
         setIsOpen={setIsMenuOpen}
-        className="block lg:hidden"
+        className="block lg:hidden z-50"
       />
     </nav>
   );
