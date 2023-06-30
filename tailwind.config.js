@@ -9,9 +9,10 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         sandy: "#FDF0E9",
+        sandyAccent: "#F3D1BF",
         orange: "#EF6D58",
         burgundy: "#391400",
-        magenta:'#B550F6',
+        magenta: "#B550F6",
         purple: "#28293E",
       },
       boxShadow: {
