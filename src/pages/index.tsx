@@ -4,6 +4,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
 import CompanyList from "../components/CompanyList";
+import AboutSection from "../components/aboutSection";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Header />
       <main>
         <CompanyList />
+        <AboutSection/>
       </main>
       <Footer />
     </>

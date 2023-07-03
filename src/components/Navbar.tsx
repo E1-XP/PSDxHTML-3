@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Button variant="outline" dark>
+        <Button variant="secondary" dark>
           Contact
         </Button>
       </div>
