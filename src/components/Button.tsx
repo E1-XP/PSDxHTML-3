@@ -15,11 +15,13 @@ const Button = ({
   className,
 }: React.PropsWithChildren<Props>) => {
   const styles = {
-    common: `text-sm text-white font-black uppercase h-12 px-8 pt-[3px] rounded-md transition flex items-center`,
-    primary: `${dark ? "bg-purple" : "bg-orange"}`,
+    common: `text-sm font-black uppercase h-12 px-8 pt-[3px] rounded-md transition flex items-center`,
+    primary: `${dark ? "bg-purple text-white" : "bg-orange text-white"} hover:brightness-90`,
     secondary: `border border-buttonOutline shadow-button ${
-      dark ? "bg-transparent text-white" : "bg-white text-burgundy"
-    } hover:bg-white hover:text-burgundy`,
+      dark
+        ? "bg-transparent text-white hover:bg-white hover:text-burgundy"
+        : "bg-white text-burgundy hover:brightness-95"
+    } `,
   };
 
   return (

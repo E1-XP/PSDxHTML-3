@@ -19,24 +19,29 @@ const aboutSection = () => {
   };
 
   return (
-    <section className="max-w-[1216px] px-min mx-auto ">
-      <div className="flex">
-        <div>
-          <StaticImage src="./../images/about.svg" alt="About visualization" />
+    <section className="max-w-[1216px] px-min mx-auto pt-[71px] md:pt-[101px] ">
+      <div className="flex md:gap-8 xl:gap-[130px] pb-[112px] md:pb-[161px] justify-between flex-col md:flex-row">
+        <div className="md:flex md:items-center md:w-1/2">
+          <StaticImage src="./../images/about.svg" alt="About Collage" />
         </div>
-        <div>
+        <div className="pt-4 md:pt-[70px] md:w-[42%]">
           <h2 className="h5">{data.tagText}</h2>
-          <h3 className="h2">{data.heading}</h3>
-          <p className="text-big">{data.subtitle}</p>
-          <p className="text">{data.paragraph}</p>
-          <Button variant="secondary">{data.buttonText}</Button>
+          <h3 className="h3 lg:h2 mt-5">{data.heading}</h3>
+          <p className="text-big mt-[26px]">{data.subtitle}</p>
+          <p className="text mt-[18px]">{data.paragraph}</p>
+          <Button variant="secondary" className="mt-[34px]">
+            {data.buttonText}
+          </Button>
         </div>
       </div>
-      <ul className="flex">
+      <ul className="flex flex-col md:flex-row w-full">
         {data.stats.map((stat) => (
-          <li key={stat.description}>
-            <h3>{stat.value}</h3>
-            <p>{stat.description}</p>
+          <li
+            key={stat.description}
+            className="border border-sandyAccent grow pl-12 pt-[45px] pb-[38px] flex flex-col gap-[13px] first-of-type:rounded-t-md last-of-type:rounded-b-md md:first-of-type:rounded-t-none md:last-of-type:rounded-b-none md:first-of-type:!rounded-l-md md:last-of-type:!rounded-r-md border-b-0 last-of-type:border-b md:border-b md:border-r-0 md:last-of-type:border-r"
+          >
+            <h3 className="h3">{stat.value}</h3>
+            <p className="text-big">{stat.description}</p>
           </li>
         ))}
       </ul>
