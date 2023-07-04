@@ -19,7 +19,7 @@ const aboutSection = () => {
   };
 
   return (
-    <section className="max-w-[1216px] px-min mx-auto pt-[71px] md:pt-[101px] ">
+    <section className="wrapper pt-[71px] md:pt-[101px] ">
       <div className="flex md:gap-8 xl:gap-[130px] pb-[112px] md:pb-[161px] justify-between flex-col md:flex-row">
         <div className="md:flex md:items-center md:w-1/2">
           <StaticImage src="./../../images/about.svg" alt="About Collage" />

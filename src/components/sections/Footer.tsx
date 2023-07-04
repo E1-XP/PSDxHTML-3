@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import FacebookIcon from "../icons/Facebook";
 import TwitterIcon from "../icons/Twitter";
 import InstagramIcon from "../icons/Instagram";
+import SeparatorLine from "../Separator";
 
 const Footer = () => {
   const data = {
@@ -41,8 +42,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="max-w-[1216px] px-min mx-auto pt-[121px] md:pt-[90px] pb-9 md:pb-14">
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-[50px] md:gap-0 border-b border-sandyAccent pb-16 md:pb-[68px]">
+    <footer className="wrapper pt-[121px] md:pt-[90px] pb-9 md:pb-14">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-[50px] md:gap-0 pb-16 md:pb-[68px]">
         <h2 className="h4">{data.logoText}</h2>
         {data.columns.map((column) => (
           <section key={column.heading}>
@@ -71,6 +72,7 @@ const Footer = () => {
           </ul>
         </section>
       </div>
+      <SeparatorLine asComponent />
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-11 gap-8 md:gap-0">
         <p className="text opacity-[64%] text-center md:text-start">
           {data.copyrightText}

@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex max-w-[1216px] w-full mx-auto px-min py-4 justify-between items-center">
+    <nav className="flex w-full wrapper py-4 justify-between items-center">
       <h1 className="flex h4 text-white gap-3.5 items-center z-50">
         <StaticImage
           src="../images/logo.svg"

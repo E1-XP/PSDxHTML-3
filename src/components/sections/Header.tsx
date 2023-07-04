@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="bg-purple min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex flex-col md:flex-row max-w-[1216px] mx-auto px-min grow gap-4">
+      <div className="flex flex-col md:flex-row wrapper grow gap-4">
         <div className="md:w-1/2 flex items-start lg:items-center md:mt-[100px] lg:mt-0 justify-center">
           <StaticImage
             src="./../../images/pic.svg"

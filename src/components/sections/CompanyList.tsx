@@ -52,7 +52,7 @@ const CompanyList = () => {
   }));
 
   return (
-    <div className="max-w-[1216px] px-min mx-auto pt-[50px] md:pt-[72px] flex flex-col gap-[50px] md:gap-[72px]">
+    <div className="wrapper pt-[50px] md:pt-[72px] flex flex-col pb-[50px] md:pb-[72px]">
       <ul className="flex items-center justify-center md:justify-between flex-wrap gap-y-8">
         {imgData.map((company) => (
           <li
@@ -67,7 +67,6 @@ const CompanyList = () => {
           </li>
         ))}
       </ul>
-      <div className="border-b border-sandyAccent"></div>
     </div>
   );
 };

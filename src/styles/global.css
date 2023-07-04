@@ -43,6 +43,10 @@
     .text-small {
       @apply text-burgundy font-normal opacity-[64%] text-sm leading-6;
     }
+
+    .wrapper {
+      @apply max-w-[1216px] px-min mx-auto;
+    }
   }
 }
 
