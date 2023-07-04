@@ -2,8 +2,8 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
-import Navbar from "./Navbar";
-import Button from "./Button";
+import Navbar from "../Navbar";
+import Button from "../Button";
 
 const Header = () => {
   const data = {
@@ -26,7 +26,7 @@ const Header = () => {
       <div className="flex flex-col md:flex-row max-w-[1216px] mx-auto px-min grow gap-4">
         <div className="md:w-1/2 flex items-start lg:items-center md:mt-[100px] lg:mt-0 justify-center">
           <StaticImage
-            src="./../images/pic.svg"
+            src="./../../images/pic.svg"
             alt="Workflow illustration"
             className="pointer-events-none"
           />
@@ -51,7 +51,7 @@ const Header = () => {
           <div className="flex md:mt-auto mt-7 mb-8 md:mb-16 gap-4">
             <div className="bg-magenta rounded-full w-12 h-12 flex shrink-0 items-center justify-center">
               <StaticImage
-                src="./../images/Bitmap.png"
+                src="./../../images/Bitmap.png"
                 alt={data.reviewAltText}
                 className="pointer-events-none"
               />

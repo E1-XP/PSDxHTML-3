@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 
-import Button from "./Button";
+import Button from "../Button";
 
 const aboutSection = () => {
   const data = {
@@ -22,7 +22,7 @@ const aboutSection = () => {
     <section className="max-w-[1216px] px-min mx-auto pt-[71px] md:pt-[101px] ">
       <div className="flex md:gap-8 xl:gap-[130px] pb-[112px] md:pb-[161px] justify-between flex-col md:flex-row">
         <div className="md:flex md:items-center md:w-1/2">
-          <StaticImage src="./../images/about.svg" alt="About Collage" />
+          <StaticImage src="./../../images/about.svg" alt="About Collage" />
         </div>
         <div className="pt-4 md:pt-[70px] md:w-[42%]">
           <h2 className="h5">{data.tagText}</h2>

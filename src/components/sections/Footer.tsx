@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import FacebookIcon from "./icons/Facebook";
-import TwitterIcon from "./icons/Twitter";
-import InstagramIcon from "./icons/Instagram";
+import FacebookIcon from "../icons/Facebook";
+import TwitterIcon from "../icons/Twitter";
+import InstagramIcon from "../icons/Instagram";
 
 const Footer = () => {
   const data = {

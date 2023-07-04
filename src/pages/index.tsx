@@ -1,10 +1,11 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
-import Header from "./../components/Header";
-import Footer from "../components/Footer";
-import CompanyList from "../components/CompanyList";
-import AboutSection from "../components/aboutSection";
+import Header from "../components/sections/Header";
+import Footer from "../components/sections/Footer";
+import CompanyList from "../components/sections/CompanyList";
+import AboutSection from "../components/sections/About";
+import HowWeWork from "../components/sections/HowWeWork";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -12,7 +13,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <Header />
       <main>
         <CompanyList />
-        <AboutSection/>
+        <AboutSection />
+        <HowWeWork/>
       </main>
       <Footer />
     </>
