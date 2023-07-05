@@ -54,3 +54,7 @@ body {
   font-family: "Epilogue";
   background-color: #fdf0e9;
 }
+
+.rounded-full-all-children * {
+  border-radius: 9999px;
+}
