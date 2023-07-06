@@ -52,8 +52,10 @@ const Footer = () => {
             </h3>
             <ul className="text-center md:text-start">
               {column.links.map((link) => (
-                <li className="text" key={link.text}>
-                  <Link to={link.to}>{link.text}</Link>
+                <li key={link.text}>
+                  <Link to={link.to} className="hover:opacity-75 text">
+                    {link.text}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -63,7 +65,7 @@ const Footer = () => {
           <ul className="flex gap-2 md:-mt-2.5">
             {data.social.map((link) => (
               <li
-                className="h-12 w-12 bg-orange rounded-full text-white flex items-center justify-center"
+                className="h-12 w-12 bg-orange rounded-full text-white cursor-pointer flex items-center justify-center hover:opacity-90"
                 key={link.text}
               >
                 {<link.icon className="h-[18px] w-[18px]" />}
@@ -79,7 +81,11 @@ const Footer = () => {
         </p>
         <div className="flex gap-[68px]">
           {data.links.map((link) => (
-            <Link className="text" to={link.to} key={link.text}>
+            <Link
+              className="text hover:opacity-75"
+              to={link.to}
+              key={link.text}
+            >
               {link.text}
             </Link>
           ))}
