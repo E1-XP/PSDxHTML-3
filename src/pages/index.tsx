@@ -8,6 +8,7 @@ import AboutSection from "../components/sections/About";
 import HowWeWork from "../components/sections/HowWeWork";
 import SeparatorLine from "../components/Separator";
 import VideoReel from "../components/sections/VideoReel";
+import Features from "../components/sections/Features";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -19,7 +20,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <AboutSection />
         <HowWeWork />
         <SeparatorLine />
-        <VideoReel/>
+        <VideoReel />
+        <Features/>
       </main>
       <Footer />
     </>

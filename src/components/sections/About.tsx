@@ -22,7 +22,11 @@ const aboutSection = () => {
     <section className="wrapper pt-[71px] md:pt-[101px] ">
       <div className="flex md:gap-8 xl:gap-[130px] pb-[112px] md:pb-[161px] justify-between flex-col md:flex-row">
         <div className="flex justify-center md:items-center md:w-1/2">
-          <StaticImage src="./../../images/about.svg" alt="About Collage" />
+          <StaticImage
+            src="./../../images/about.svg"
+            alt="About Collage"
+            className="pointer-events-none"
+          />
         </div>
         <div className="pt-4 md:pt-[70px] md:w-[42%]">
           <h2 className="h5">{data.tagText}</h2>
