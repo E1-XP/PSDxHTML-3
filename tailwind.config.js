@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         white: "#FFFFFF",
+        yellow: "#F7CB47",
         sandy: "#FDF0E9",
         sandyAccent: "#F3D1BF",
         orange: "#EF6D58",

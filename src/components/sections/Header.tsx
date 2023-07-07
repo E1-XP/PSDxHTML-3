@@ -49,7 +49,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="flex md:mt-auto mt-7 mb-8 md:mb-16 gap-4">
-            <div className="bg-magenta rounded-full w-12 h-12 flex shrink-0 items-center justify-center">
+            <div className="bg-magenta rounded-full w-12 h-12 flex shrink-0 items-end justify-center">
               <StaticImage
                 src="./../../images/Bitmap.png"
                 alt={data.reviewAltText}
