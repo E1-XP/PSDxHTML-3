@@ -86,9 +86,9 @@ const Service = () => {
         </div>
       </div>
       <div>
-        <div className="xl:w-[42%]">
+        <div>
           <h2 className="h5">{data.section2.tagText}</h2>
-          <h3 className="h3 mt-[17px]">
+          <h3 className="h3 mt-[17px] max-w-[14ch]">
             {data.section2.heading}
           </h3>
         </div>
