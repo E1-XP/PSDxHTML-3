@@ -20,7 +20,7 @@ const VideoReel = () => {
         <StaticImage
           src="./../../images/play.svg"
           alt="Video controls"
-          className="absolute top-1/2 -translate-y-1/2 cursor-pointer rounded-full rounded-full-all-children"
+          className="!absolute top-1/2 -translate-y-1/2 cursor-pointer rounded-full rounded-full-all-children"
         />
       </div>
       <div className="pt-6 md:pt-0 md:flex md:flex-col md:justify-center md:w-[42%]">
