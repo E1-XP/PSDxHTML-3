@@ -6,6 +6,7 @@ interface Props {
   variant?: Variants;
   dark?: boolean;
   className?: string;
+  onClick?: () => any;
 }
 
 const Button = ({
@@ -13,10 +14,13 @@ const Button = ({
   variant = "primary",
   dark,
   className,
+  onClick,
 }: React.PropsWithChildren<Props>) => {
   const styles = {
     common: `text-sm font-black uppercase h-12 px-8 pt-[3px] rounded-md transition flex items-center`,
-    primary: `${dark ? "bg-purple text-white" : "bg-orange text-white"} hover:brightness-90`,
+    primary: `${
+      dark ? "bg-purple text-white" : "bg-orange text-white"
+    } hover:brightness-90`,
     secondary: `border border-buttonOutline shadow-button ${
       dark
         ? "bg-transparent text-white hover:bg-white hover:text-burgundy"
@@ -25,7 +29,10 @@ const Button = ({
   };
 
   return (
-    <button className={`${styles.common} ${styles[variant]} ${className}`}>
+    <button
+      className={`${styles.common} ${styles[variant]} ${className}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );
