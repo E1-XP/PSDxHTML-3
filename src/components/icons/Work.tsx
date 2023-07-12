@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const PresentationIcon = ({ className }: { className?: string }) => {
+const WorkIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       width="32"
@@ -20,4 +20,4 @@ const PresentationIcon = ({ className }: { className?: string }) => {
   );
 };
 
-export default PresentationIcon;
+export default WorkIcon;

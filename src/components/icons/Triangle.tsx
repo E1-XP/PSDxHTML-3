@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const PresentationIcon = ({ className }: { className?: string }) => {
+const TriangleIcon = ({ className }: { className?: string }) => {
   return (
     <svg
       width="10"
@@ -14,4 +14,4 @@ const PresentationIcon = ({ className }: { className?: string }) => {
   );
 };
 
-export default PresentationIcon;
+export default TriangleIcon;

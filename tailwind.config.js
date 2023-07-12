@@ -15,6 +15,7 @@ module.exports = {
         burgundy: "#391400",
         magenta: "#B550F6",
         purple: "#28293E",
+        purpleGray:'#3A3C56'
       },
       boxShadow: {
         button: "0px 3px 9px 0px rgba(57, 20, 0, 0.08)",

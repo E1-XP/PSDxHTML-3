@@ -11,6 +11,7 @@ import VideoReel from "../components/sections/VideoReel";
 import Features from "../components/sections/Features";
 import Service from "../components/sections/Service";
 import Portfolio from "../components/sections/Portfolio";
+import Events from "../components/sections/Events";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -25,7 +26,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <VideoReel />
         <Features />
         <Service />
-        <Portfolio/>
+        <Portfolio />
+        <Events/>
       </main>
       <Footer />
     </>
