@@ -70,15 +70,15 @@ const OurTeam = () => {
 
   return (
     <section className="bg-purple">
-      <div className="wrapper pt-[62px] md:pt-[70px] pb-[90px]">
+      <div className="wrapper pt-[62px] md:pt-[70px] pb-[58px] md:pb-[90px]">
         <div className="flex justify-between">
           <div>
             <h2 className="h5">{sectionData.tagText}</h2>
-            <h3 className="h3 lg:h2 !text-white max-w-[531px] mt-5">
+            <h3 className="h3 lg:h2 !text-white max-w-[531px] mt-[17px] md:mt-5">
               {sectionData.heading}
             </h3>
           </div>
-          <div className="flex gap-4 items-end">
+          <div className="gap-4 items-end hidden md:flex">
             <span
               className="flex items-center justify-center h-12 w-12 rounded-full border border-white cursor-pointer hover:opacity-75"
               onClick={() => swiperRef.current?.slidePrev()}
@@ -93,10 +93,11 @@ const OurTeam = () => {
             </span>
           </div>
         </div>
-        <div className="mt-16">
+        <div className="mt-[35px] md:mt-16">
           <Swiper
+            id="team"
             spaceBetween={30}
-            slidesPerView={4}
+            slidesPerView="auto"
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
@@ -105,21 +106,10 @@ const OurTeam = () => {
               clickable: true,
               el: ".swiper-custom-pagination",
             }}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-              },
-              1000: {
-                slidesPerView: 2,
-              },
-              1300: {
-                slidesPerView: 4,
-              },
-            }}
           >
             {sectionData.team.map((item, i) => (
               <SwiperSlide key={i}>
-                <div className="">
+                <div className="w-[270px]">
                   <div className="border border-purpleGray rounded-md h-[272px] flex flex-col items-center justify-end">
                     <GatsbyImage
                       image={item.data}
@@ -135,7 +125,7 @@ const OurTeam = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-custom-pagination flex items-center justify-center gap-2.5 mt-[50px]"></div>
+          <div className="swiper-custom-pagination flex items-center justify-center gap-2.5 mt-[36px] md:mt-[50px]"></div>
         </div>
       </div>
     </section>
