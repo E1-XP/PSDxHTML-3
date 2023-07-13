@@ -12,6 +12,7 @@ import Features from "../components/sections/Features";
 import Service from "../components/sections/Service";
 import Portfolio from "../components/sections/Portfolio";
 import Events from "../components/sections/Events";
+import OurTeam from "../components/sections/OurTeam";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -27,7 +28,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <Features />
         <Service />
         <Portfolio />
-        <Events/>
+        <Events />
+        <OurTeam/>
       </main>
       <Footer />
     </>

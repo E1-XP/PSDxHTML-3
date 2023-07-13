@@ -58,3 +58,17 @@ body {
 .rounded-full-all-children * {
   border-radius: 9999px;
 }
+
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  border: 1px solid white;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ef6d58 !important;
+  border: none;
+  width: 12px !important;
+  height: 12px !important;
+}
