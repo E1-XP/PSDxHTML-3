@@ -1,8 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import { Link } from "gatsby";
 
 import CheckmarkIcon from "../icons/Checkmark";
-import { Link } from "gatsby";
 import PocketKnifeIcon from "../icons/PocketKnife";
 
 const Features = () => {
@@ -48,7 +48,7 @@ const Features = () => {
         </div>
         <div className="md:pt-[70px] md:w-[42%] md:-order-1">
           <h2 className="h5">{data.section1.tagText}</h2>
-          <h3 className="h3 lg:h2 pt-[17px] md:mt-5">
+          <h3 className="h3 lg:h2 mt-[17px] md:mt-5">
             {data.section1.heading}
           </h3>
           <p className="text-big mt-[13px] md:mt-[26px]">

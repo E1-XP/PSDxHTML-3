@@ -59,14 +59,14 @@ body {
   border-radius: 9999px;
 }
 
-#team .swiper-pagination-bullet {
+#team-pagination .swiper-pagination-bullet {
   background-color: transparent !important;
   border: 1px solid white;
   width: 10px !important;
   height: 10px !important;
 }
 
-#team .swiper-pagination-bullet-active {
+#team-pagination .swiper-pagination-bullet-active {
   background-color: #ef6d58 !important;
   border: none;
   width: 12px !important;

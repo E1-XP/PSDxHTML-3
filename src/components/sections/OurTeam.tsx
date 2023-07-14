@@ -125,7 +125,10 @@ const OurTeam = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="swiper-custom-pagination flex items-center justify-center gap-2.5 mt-[36px] md:mt-[50px]"></div>
+          <div
+            id="team-pagination"
+            className="swiper-custom-pagination flex items-center justify-center gap-2.5 mt-[36px] md:mt-[50px]"
+          ></div>
         </div>
       </div>
     </section>
