@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         yellow: "#F7CB47",
+        gold:"#F6D021",
         sandy: "#FDF0E9",
         sandyAccent: "#F3D1BF",
         orange: "#EF6D58",
@@ -19,6 +20,7 @@ module.exports = {
       },
       boxShadow: {
         button: "0px 3px 9px 0px rgba(57, 20, 0, 0.08)",
+        activeCard:"0px 32px 64px 0px rgba(57, 20, 0, 0.04)"
       },
       borderColor: {
         buttonOutline: "rgba(255, 255, 255, 0.30)",
