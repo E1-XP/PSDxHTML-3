@@ -31,14 +31,14 @@ const FAQ = () => {
   };
 
   return (
-    <section className="wrapper flex flex-col md:flex-row pt-[78px] md:gap-8 xl:gap-[130px]">
-      <div>
+    <section className="wrapper flex flex-col lg:flex-row pt-[46px] md:pt-[78px] gap-9 md:gap-8 xl:gap-[130px] pb-[46px] md:pb-[78px]">
+      <div className="basis-[45%]">
         <h2 className="h5">{data.tagText}</h2>
-        <h3 className="h3 max-w-[371px]">{data.heading}</h3>
-        <p className="text">{data.paragraph}</p>
-        <Link to="#">{data.linkText}</Link>
+        <h3 className="h3 max-w-[371px] mt-[17px]">{data.heading}</h3>
+        <p className="text opacity-[0.64] mt-[15px] md:mt-[31px]">{data.paragraph}</p>
+        <Link to="#" className="mt-8 md:mt-[29px] block hover:opacity-75">{data.linkText}</Link>
       </div>
-      <div>
+      <div className="basis-[54.5%]">
         <Accordion data={data.accordion} />
       </div>
     </section>
