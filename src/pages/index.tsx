@@ -16,6 +16,7 @@ import OurTeam from "../components/sections/OurTeam";
 import FounderWords from "../components/sections/FounderWords";
 import Testimonials from "../components/sections/Testimonials";
 import Pricing from "../components/sections/Pricing";
+import FAQ from "../components/sections/Faq";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -35,7 +36,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <OurTeam />
         <FounderWords />
         <Testimonials />
-        <Pricing/>
+        <Pricing />
+        <FAQ/>
       </main>
       <Footer />
     </>
