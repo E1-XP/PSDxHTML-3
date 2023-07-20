@@ -64,7 +64,6 @@ const Awards = () => {
     paragraph: "Want more awards?",
     linkText: "Explore Now",
   };
-  console.log(sectionData);
 
   return (
     <section className="wrapper pt-[46px] md:pt-[78px] pb-[48px] md:pb-[56px]">
