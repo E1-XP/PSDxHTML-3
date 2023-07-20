@@ -28,7 +28,9 @@ const Accordion = ({ data }: Props) => {
     );
   };
 
-  window.addEventListener("resize", throttle(setInitialHeight, 300));
+  if (typeof window !== `undefined`) {
+    window.addEventListener("resize", throttle(setInitialHeight, 300));
+  }
 
   const onClickHandler = (e: React.MouseEvent<HTMLElement>, idx: number) => {
     setIsOpened(
