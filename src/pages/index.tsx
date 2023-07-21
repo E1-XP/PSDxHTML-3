@@ -19,6 +19,7 @@ import Pricing from "../components/sections/Pricing";
 import FAQ from "../components/sections/Faq";
 import Awards from "../components/sections/Awards";
 import Blog from "../components/sections/Blog";
+import Newsletter from "../components/sections/Newsletter";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -42,7 +43,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <FAQ />
         <Awards />
         <Blog />
-        <SeparatorLine/>
+        <SeparatorLine />
+        <Newsletter/>
       </main>
       <Footer />
     </>

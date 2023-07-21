@@ -17,7 +17,7 @@ const Button = ({
   onClick,
 }: React.PropsWithChildren<Props>) => {
   const styles = {
-    common: `text-sm font-black uppercase h-12 px-8 pt-[3px] rounded-md transition flex items-center`,
+    common: `text-sm font-black uppercase h-12 px-8 pt-[3px] rounded-md transition flex items-center justify-center`,
     primary: `${
       dark ? "bg-purple text-white" : "bg-orange text-white"
     } hover:brightness-90`,
