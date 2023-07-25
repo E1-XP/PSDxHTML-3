@@ -20,6 +20,7 @@ import FAQ from "../components/sections/Faq";
 import Awards from "../components/sections/Awards";
 import Blog from "../components/sections/Blog";
 import Newsletter from "../components/sections/Newsletter";
+import Contact from "../components/sections/Contact";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -44,7 +45,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <Awards />
         <Blog />
         <SeparatorLine />
-        <Newsletter/>
+        <Newsletter />
+        <Contact/>
       </main>
       <Footer />
     </>

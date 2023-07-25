@@ -59,6 +59,12 @@ body {
   border-radius: 9999px;
 }
 
+.contact-map-position img {
+  @media only screen and (max-width: 1024px) {
+    object-position: 75%;
+  }
+}
+
 #team-pagination .swiper-pagination-bullet {
   background-color: transparent !important;
   border: 1px solid white;

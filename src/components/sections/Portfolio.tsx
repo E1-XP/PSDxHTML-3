@@ -1,28 +1,9 @@
 import * as React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
-import Select, {
-  DropdownIndicatorProps,
-  IndicatorSeparatorProps,
-  components,
-} from "react-select";
 
 import Button from "../Button";
-import Triangle from "./../icons/Triangle";
-
-const DropdownIndicator = (props: DropdownIndicatorProps) => {
-  return (
-    <components.DropdownIndicator {...props}>
-      <div className="p-[13px]">
-        <Triangle />
-      </div>
-    </components.DropdownIndicator>
-  );
-};
-
-const IndicatorSeparator = ({ innerProps }: IndicatorSeparatorProps) => {
-  return <span style={{ backgroundColor: "transparent" }} {...innerProps} />;
-};
+import Input from "../Input";
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -85,29 +66,11 @@ const Portfolio = () => {
         <h3 className="h2 text-white mt-[17px] md:mt-5">
           {sectionData.heading}
         </h3>
-        <Select
+        <Input
+          type="select"
           options={sectionData.tabs}
-          className="md:hidden w-full mt-[35px] text"
+          className="md:hidden w-full mt-[35px]"
           defaultValue={sectionData.tabs[0]}
-          components={{ DropdownIndicator, IndicatorSeparator }}
-          styles={{
-            control: (base, state) => ({
-              ...base,
-              height: "48px",
-            }),
-            option: (base, { isFocused, isSelected }) => ({
-              ...base,
-              backgroundColor: isSelected
-                ? "#EF6D58"
-                : isFocused
-                ? "#FDF0E9"
-                : undefined,
-            }),
-            singleValue: (base, props) => ({
-              ...base,
-              color: "rgba(0,0,0,0.64)",
-            }),
-          }}
         />
         <ul className="gap-[60px] mt-12 md:mt-[44px] hidden md:flex">
           {sectionData.tabs.map((item) => (
