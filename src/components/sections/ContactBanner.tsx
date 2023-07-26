@@ -27,6 +27,7 @@ const ContactBanner = () => {
             src="./../../images/banner.png"
             alt="contact us collage"
             className="pointer-events-none"
+            placeholder="blurred"
           />
         </div>
       </div>

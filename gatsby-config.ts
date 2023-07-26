@@ -18,7 +18,12 @@ const config: GatsbyConfig = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        placeholder: "blurred",
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -31,9 +36,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Epilogue\:400,500,700,800,900`,
-        ],
+        fonts: [`Epilogue\:400,500,700,800,900`],
         display: "swap",
       },
     },

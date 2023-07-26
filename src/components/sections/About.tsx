@@ -26,6 +26,7 @@ const aboutSection = () => {
             src="./../../images/about.svg"
             alt="About Collage"
             className="pointer-events-none"
+            placeholder="blurred"
           />
         </div>
         <div className="pt-4 md:pt-[70px] md:w-[42%]">

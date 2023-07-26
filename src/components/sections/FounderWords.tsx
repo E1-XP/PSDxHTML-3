@@ -18,6 +18,7 @@ const FounderWords = () => {
             src={"./../../images/founder.png"}
             alt={data.author}
             className="pointer-events-none"
+            placeholder="blurred"
           />
         </div>
         <div className="md:w-[42%] relative flex flex-col mt-auto mb-auto">
@@ -25,6 +26,7 @@ const FounderWords = () => {
             src={"./../../images/quotes.svg"}
             alt="quote marks"
             className="pointer-events-none !absolute top-2 right-0 md:right-[46px]"
+            placeholder="blurred"
           />
           <h2 className="h5 z-10">{data.tagText}</h2>
           <h3 className="h4 lg:h3 !text-white mt-[29px] md:mt-[33px] z-10">

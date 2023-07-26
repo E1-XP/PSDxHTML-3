@@ -22,6 +22,7 @@ const Navbar = () => {
             src="../images/logo.svg"
             alt="Agency"
             className="pointer-events-none w-12 h-12"
+            placeholder="blurred"
           />
           Agency
         </h1>

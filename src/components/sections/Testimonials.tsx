@@ -20,7 +20,7 @@ const Testimonials = () => {
           node {
             name
             childImageSharp {
-              gatsbyImageData(layout: FIXED)
+              gatsbyImageData(layout: FIXED, placeholder: BLURRED)
             }
           }
         }

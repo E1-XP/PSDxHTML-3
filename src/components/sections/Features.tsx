@@ -44,6 +44,7 @@ const Features = () => {
             src="./../../images/features.svg"
             alt="Features Collage"
             className="pointer-events-none"
+            placeholder="blurred"
           />
         </div>
         <div className="md:pt-[70px] md:w-[42%] md:-order-1">

@@ -24,7 +24,7 @@ const OurTeam = () => {
           node {
             name
             childImageSharp {
-              gatsbyImageData(layout: FIXED)
+              gatsbyImageData(layout: FIXED, placeholder: BLURRED)
             }
           }
         }

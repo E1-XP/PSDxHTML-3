@@ -29,6 +29,7 @@ const Header = () => {
             src="./../../images/pic.svg"
             alt="Workflow illustration"
             className="pointer-events-none"
+            placeholder="blurred"
           />
         </div>
         <div className="md:w-1/2 md:-order-1 flex flex-col gap-5 md:gap-6 mt-4 md:mt-[108px]">
@@ -54,6 +55,7 @@ const Header = () => {
                 src="./../../images/Bitmap.png"
                 alt={data.reviewAltText}
                 className="pointer-events-none"
+                placeholder="blurred"
               />
             </div>
             <div className="flex flex-col justify-between">

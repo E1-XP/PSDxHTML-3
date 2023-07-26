@@ -55,6 +55,7 @@ const Service = () => {
             src="./../../images/service.svg"
             alt="Service collage"
             className="pointer-events-none"
+            placeholder="blurred"
           />
         </div>
         <div className="md:pt-[41px] md:basis-[42%]">
@@ -71,6 +72,7 @@ const Service = () => {
                 src="./../../images/serviceQuote.png"
                 alt={data.section1.quoteAuthor}
                 className="pointer-events-none"
+                placeholder="blurred"
               />
             </div>
             <div className="flex flex-col justify-between gap-y-3">

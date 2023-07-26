@@ -16,11 +16,13 @@ const VideoReel = () => {
           src="./../../images/video.png"
           alt="Video preview thumbnail"
           className="pointer-events-none"
+          placeholder="blurred"
         />
         <StaticImage
           src="./../../images/play.svg"
           alt="Video controls"
           className="!absolute top-1/2 -translate-y-1/2 cursor-pointer rounded-full rounded-full-all-children"
+          placeholder="blurred"
         />
       </div>
       <div className="pt-6 md:pt-0 md:flex md:flex-col md:justify-center md:w-[42%]">
