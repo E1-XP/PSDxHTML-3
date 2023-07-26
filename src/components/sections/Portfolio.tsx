@@ -119,7 +119,7 @@ const Portfolio = () => {
           <StaticImage
             src="./../../images/icon.svg"
             alt="Unexpected gift vector art"
-            className="absolute top-0 left-3 sm:left-[84px] -translate-y-1/2 pointer-events-none"
+            className="!absolute top-0 left-3 sm:left-[84px] -translate-y-1/2 pointer-events-none"
           />
           <div className="pt-[92px] sm:pb-[64px] ml-7 sm:ml-[100px] sm:max-w-[248px]">
             <h2 className="h5">{sectionData.banner.tagText}</h2>
@@ -136,7 +136,7 @@ const Portfolio = () => {
           <StaticImage
             src="./../../images/Frame 1.png"
             alt="happy customer"
-            className="pointer-events-none mt-9 sm:mt-0 absolute w-[230px] sm:w-auto sm:right-[5px] mr-[7vw] sm:mr-0 md:right-[83px] bottom-0"
+            className="pointer-events-none mt-9 sm:mt-0 !absolute w-[230px] sm:w-auto sm:right-[5px] mr-[7vw] sm:mr-0 md:right-[83px] bottom-0"
           />
         </div>
       </div>

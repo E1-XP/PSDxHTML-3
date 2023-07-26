@@ -24,7 +24,7 @@ const FounderWords = () => {
           <StaticImage
             src={"./../../images/quotes.svg"}
             alt="quote marks"
-            className="pointer-events-none absolute top-2 right-0 md:right-[46px]"
+            className="pointer-events-none !absolute top-2 right-0 md:right-[46px]"
           />
           <h2 className="h5 z-10">{data.tagText}</h2>
           <h3 className="h4 lg:h3 !text-white mt-[29px] md:mt-[33px] z-10">
