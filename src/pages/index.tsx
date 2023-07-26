@@ -21,6 +21,7 @@ import Awards from "../components/sections/Awards";
 import Blog from "../components/sections/Blog";
 import Newsletter from "../components/sections/Newsletter";
 import Contact from "../components/sections/Contact";
+import ContactBanner from "../components/sections/ContactBanner";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -46,7 +47,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <Blog />
         <SeparatorLine />
         <Newsletter />
-        <Contact/>
+        <Contact />
+        <ContactBanner/>
       </main>
       <Footer />
     </>
