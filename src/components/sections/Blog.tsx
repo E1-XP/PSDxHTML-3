@@ -58,7 +58,7 @@ const Blog = () => {
   };
 
   return (
-    <section className="wrapper pt-[48px] md:pt-[56px] pb-[52px] md:pb-[68px]">
+    <section id="blog" className="wrapper pt-[48px] md:pt-[56px] pb-[52px] md:pb-[68px]">
       <div className="flex flex-col md:flex-row items-start md:items-end justify-between">
         <div>
           <h2 className="h5">{sectionData.tagText}</h2>

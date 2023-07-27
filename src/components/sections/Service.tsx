@@ -48,7 +48,10 @@ const Service = () => {
   };
 
   return (
-    <section className="wrapper pt-[56px] md:pt-[80px] flex flex-col gap-[124px] md:gap-[141px] pb-[114px] md:pb-32">
+    <section
+      id="services"
+      className="wrapper pt-[56px] md:pt-[80px] flex flex-col gap-[124px] md:gap-[141px] pb-[114px] md:pb-32"
+    >
       <div className="flex flex-col md:flex-row gap-1.5 md:gap-16 lg:gap-[120px]">
         <div className="flex justify-center md:items-center md:basis-1/2 -order-1">
           <StaticImage
@@ -90,9 +93,7 @@ const Service = () => {
       <div>
         <div>
           <h2 className="h5">{data.section2.tagText}</h2>
-          <h3 className="h3 mt-[17px] max-w-[14ch]">
-            {data.section2.heading}
-          </h3>
+          <h3 className="h3 mt-[17px] max-w-[14ch]">{data.section2.heading}</h3>
         </div>
         <ul className="flex flex-col md:flex-row mt-[35px]">
           {data.section2.services.map((item) => (

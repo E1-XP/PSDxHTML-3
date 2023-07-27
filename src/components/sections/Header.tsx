@@ -14,7 +14,6 @@ const Header = () => {
 
     buttonText: "How we work",
     helperText: "Contact Us",
-
     quoteText: `"Put themselves in the merchant's shoes"`,
     quoteAuthor: "Meta Inc.",
     reviewAltText: "Reviewer from Meta Inc. company",

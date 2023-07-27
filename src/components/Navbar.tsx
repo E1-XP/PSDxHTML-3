@@ -10,6 +10,16 @@ const Navbar = () => {
   const menuItems = ["About", "Services", "Pricing", "Blog"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const onMenuClick = (e: React.MouseEvent<HTMLAnchorElement|HTMLButtonElement>) => {
+    e.preventDefault();
+
+    const sectionName = e.currentTarget.textContent;
+    const section = document.getElementById(sectionName?.toLowerCase());
+
+    if (section) section.scrollIntoView({ behavior: "smooth" });
+    if (isMenuOpen) setIsMenuOpen(false);
+  };
+
   return (
     <>
       <nav
@@ -17,14 +27,16 @@ const Navbar = () => {
           isMenuOpen ? "max-lg:fixed" : ""
         }`}
       >
-        <h1 className="flex h4 text-white gap-3.5 items-center z-50">
-          <StaticImage
-            src="../images/logo.svg"
-            alt="Agency"
-            className="pointer-events-none w-12 h-12"
-            placeholder="blurred"
-          />
-          Agency
+        <h1 className="flex h4 text-white z-50">
+          <Link to="/" className="flex gap-3.5 items-center">
+            <StaticImage
+              src="../images/logo.svg"
+              alt="Agency"
+              className="pointer-events-none w-12 h-12"
+              placeholder="blurred"
+            />
+            Agency
+          </Link>
         </h1>
         <div
           className={`items-center fixed lg:static flex w-full transition gap-10 lg:gap-0 bg-purple flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[15vh] lg:pt-0 lg:justify-normal z-40 ${
@@ -39,11 +51,13 @@ const Navbar = () => {
                 className="text text-3xl lg:text-base text-white hover:opacity-75 transition"
                 key={item}
               >
-                <Link to={item}>{item}</Link>
+                <Link to="#" onClick={onMenuClick}>
+                  {item}
+                </Link>
               </li>
             ))}
           </ul>
-          <Button variant="secondary" dark>
+          <Button variant="secondary" dark onClick={onMenuClick}>
             Contact
           </Button>
         </div>

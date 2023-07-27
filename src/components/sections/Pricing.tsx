@@ -49,7 +49,7 @@ const Pricing = () => {
   };
 
   return (
-    <section className="wrapper pt-[62px] md:pt-[54px] pb-[46px] md:pb-[78px]">
+    <section id="pricing" className="wrapper pt-[62px] md:pt-[54px] pb-[46px] md:pb-[78px]">
       <div>
         <h2 className="h5">{data.tagText}</h2>
         <h3 className="h3 lg:h2 max-w-[358px] mt-[17px] lg:mt-5">

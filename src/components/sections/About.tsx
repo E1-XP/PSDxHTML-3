@@ -3,7 +3,7 @@ import * as React from "react";
 
 import Button from "../Button";
 
-const aboutSection = () => {
+const AboutSection = () => {
   const data = {
     tagText: "About",
     heading: "An Experience Design Agency",
@@ -19,7 +19,7 @@ const aboutSection = () => {
   };
 
   return (
-    <section className="wrapper pt-[71px] md:pt-[101px] ">
+    <section className="wrapper pt-[71px] md:pt-[101px]" id="about">
       <div className="flex md:gap-8 xl:gap-[130px] pb-[112px] md:pb-[161px] justify-between flex-col md:flex-row">
         <div className="flex justify-center md:items-center md:w-1/2">
           <StaticImage
@@ -54,4 +54,4 @@ const aboutSection = () => {
   );
 };
 
-export default aboutSection;
+export default AboutSection;

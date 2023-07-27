@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="pb-[128px] lg:pb-[130px]">
+    <section id="contact" className="pb-[128px] lg:pb-[130px]">
       <div className="lg:relative max-lg:flex max-lg:flex-col max-lg:gap-[65px]">
         <StaticImage
           src="./../../images/map.png"
