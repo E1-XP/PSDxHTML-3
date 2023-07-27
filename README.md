@@ -1,49 +1,40 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# PSDxHTML #3
+Simple template moved into markup with the help of Gatsby and Tailwind.
+## Screenshots
 
-## 🚀 Quick start
+![App Screenshot](https://images.ctfassets.net/ysju8du0bph9/2TPqaZ8jE8SCKyrTtr3lJ/2fd7ed0703ac790741081a3d7071034c/Screenshot_from_2023-07-27_12-26-32.png)
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+## Demo
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+https://prismatic-beignet-000cee.netlify.app/
 
-2.  **Start developing.**
+## Figma reference
+https://www.figma.com/file/BRO59zPoiTDNvDWt0tdMvl/Portfolio-Template-(Community)?node-id=0%3A1&mode=dev
 
-    Navigate into your new site’s directory and start it up.
+## Tech Stack
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- Typescript
+- Gatsby.js
+- Tailwind CSS
+## Installation
 
-3.  **Open the code and start customizing!**
+How to run project locally:
 
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+1. Clone repository:
+```bash
+  git clone git@github.com:E1-XP/PSDxHTML-3.git
+```
+2. Move inside project directory:
+```bash
+  cd PSDxHTML-3
+```
+3. Install dependencies:
+```bash
+  npm install
+```
+4. Run development server:
+```bash
+  npm run start
+```
+    
