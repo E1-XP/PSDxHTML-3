@@ -117,7 +117,7 @@ const OurTeam = () => {
                       className="pointer-events-none"
                     />
                   </div>
-                  <h3 className="h4 text-white mt-[25px]">{item.name}</h3>
+                  <h4 className="h4 text-white mt-[25px]">{item.name}</h4>
                   <p className="text text-white opacity-[0.64] mt-[3px]">
                     {item.role}
                   </p>

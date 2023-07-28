@@ -61,7 +61,7 @@ const Footer = () => {
             </ul>
           </section>
         ))}
-        <section>
+        <div>
           <ul className="flex gap-2 md:-mt-2.5">
             {data.social.map((link) => (
               <li
@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </section>
+        </div>
       </div>
       <SeparatorLine asComponent />
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between mt-11 gap-8 md:gap-0">

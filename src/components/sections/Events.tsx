@@ -49,15 +49,15 @@ const Events = () => {
             <li key={item.heading}>
               <div className="border border-purpleGray rounded-md px-7 md:px-10 py-9 h-full flex flex-col">
                 <div className="mb-9">
-                  <h3 className="flex gap-3">
+                  <h4 className="flex gap-3">
                     <span className="h1 text-white">
-                      {format(item.date.start, "d")}
+                      {format(item.date.start, "d")}{" "}
                     </span>
                     <span className="h4 text-white flex flex-col mt-[5px]">
-                      <span>{format(item.date.start, "LLLL")}</span>
+                      <span>{format(item.date.start, "LLLL")}</span>{" "}
                       <span>{format(item.date.start, "y")}</span>
                     </span>
-                  </h3>
+                  </h4>
                   <p className="flex mt-2 gap-2 items-center text text-white">
                     <ClockIcon />
                     {format(item.date.start, "K:mm aaa")} -
@@ -66,7 +66,7 @@ const Events = () => {
                 </div>
                 <SeparatorLine className="!border-purpleGray" asComponent />
                 <div className="mt-10 flex flex-col h-full">
-                  <h3 className="h4 text-white">{item.heading}</h3>
+                  <h5 className="h4 text-white">{item.heading}</h5>
                   <p className="text text-white opacity-[0.64] mt-[19px]">
                     {item.paragraph}
                   </p>

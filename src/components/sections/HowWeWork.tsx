@@ -21,16 +21,21 @@ const HowWeWork = () => {
         <h2 className="h5">{data.tagText}</h2>
         <h3 className="h3 mt-[17px]">{data.heading}</h3>
         <p className="text mt-[15px] md:mt-[31px]">{data.paragraph}</p>
-        <Link to="#" className="text mt-8 md:mt-7 hover:opacity-75 inline-block">
+        <Link
+          to="#"
+          className="text mt-8 md:mt-7 hover:opacity-75 inline-block"
+        >
           {data.linkText}
         </Link>
       </div>
       <div className="md:flex md:items-center md:w-1/2">
         <ul className="flex flex-col gap-8 mt-[72px] md:mt-16">
           {data.features.map((item) => (
-            <li key={item.value} className="flex items-center">
-              <h3 className="h1 w-[100px]">{item.value}</h3>
-              <p className="h4">{item.description}</p>
+            <li key={item.value} className="flex">
+              <h4 className="flex items-center h4">
+                <span className="block h1 min-w-[100px] ">{item.value}</span>{" "}
+                {item.description}
+              </h4>
             </li>
           ))}
         </ul>

@@ -72,8 +72,8 @@ const Pricing = () => {
                   {item.badge}
                 </span>
               )}
-              <h3 className="h5">{item.tagText}</h3>
-              <h4 className="h3 max-w-[358px] mt-[17px]">{item.price}</h4>
+              <h4 className="h5">{item.tagText}</h4>
+              <h5 className="h3 max-w-[358px] mt-[17px]">{item.price}</h5>
               <p className="text mt-[15px]">{item.paragraph}</p>
               <ul className="mt-[27px] flex flex-col gap-4">
                 {item.features.map((itm) => (
