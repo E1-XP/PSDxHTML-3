@@ -34,6 +34,12 @@ const config: GatsbyConfig = {
       __key: "images",
     },
     {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://fonts.gstatic.com/"],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Epilogue\:400,500,700,800,900`],
