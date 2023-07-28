@@ -67,6 +67,7 @@ const Portfolio = () => {
           {sectionData.heading}
         </h3>
         <Input
+          label="portfolio tabs"
           type="select"
           options={sectionData.tabs}
           className="md:hidden w-full mt-[35px]"

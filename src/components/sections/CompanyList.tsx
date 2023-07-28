@@ -52,7 +52,7 @@ const CompanyList = () => {
   }));
 
   return (
-    <section className="wrapper pt-[50px] md:pt-[72px] flex flex-col pb-[50px] md:pb-[72px]">
+    <div className="wrapper pt-[50px] md:pt-[72px] flex flex-col pb-[50px] md:pb-[72px]">
       <ul className="flex items-center justify-center md:justify-between flex-wrap gap-y-8">
         {imgData.map((company) => (
           <li
@@ -67,7 +67,7 @@ const CompanyList = () => {
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 };
 

@@ -10,7 +10,9 @@ const Navbar = () => {
   const menuItems = ["About", "Services", "Pricing", "Blog"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const onMenuClick = (e: React.MouseEvent<HTMLAnchorElement|HTMLButtonElement>) => {
+  const onMenuClick = (
+    e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
+  ) => {
     e.preventDefault();
 
     const sectionName = e.currentTarget.textContent;
@@ -27,8 +29,8 @@ const Navbar = () => {
           isMenuOpen ? "max-lg:fixed" : ""
         }`}
       >
-        <h1 className="flex h4 text-white z-50">
-          <Link to="/" className="flex gap-3.5 items-center">
+        <Link to="/" className="">
+          <h1 className="flex gap-3.5 items-center h4 text-white z-50">
             <StaticImage
               src="../images/logo.svg"
               alt="Agency"
@@ -36,8 +38,8 @@ const Navbar = () => {
               placeholder="blurred"
             />
             Agency
-          </Link>
-        </h1>
+          </h1>
+        </Link>
         <div
           className={`items-center fixed lg:static flex w-full transition gap-10 lg:gap-0 bg-purple flex-col lg:flex-row top-20 left-0 h-full lg:h-auto pt-[15vh] lg:pt-0 lg:justify-normal z-40 ${
             isMenuOpen
@@ -51,9 +53,7 @@ const Navbar = () => {
                 className="text text-3xl lg:text-base text-white hover:opacity-75 transition"
                 key={item}
               >
-                <Link to="#" onClick={onMenuClick}>
-                  {item}
-                </Link>
+                <Link to={`#${item.toLowerCase()}`}>{item}</Link>
               </li>
             ))}
           </ul>

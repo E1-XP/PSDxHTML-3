@@ -15,6 +15,7 @@ const Newsletter = () => {
       <div className="flex flex-col md:flex-row justify-between items-center md:gap-[30px]">
         <h2 className="h3">{data.heading}</h2>
         <Input
+          label="newsletter"
           placeholder={data.inputPlaceholder}
           className="ml-auto w-[370px] max-md:w-full max-md:mt-[35px]"
         />

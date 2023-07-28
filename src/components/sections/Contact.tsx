@@ -61,17 +61,20 @@ const Contact = () => {
             <form action="" className="flex flex-col items-start">
               <h3 className="h4">{data.form.heading}</h3>
               <Input
+                label="email"
                 type="email"
                 placeholder={data.form.emailPlaceholder}
                 className="mt-[23px] w-full"
               />
               <Input
+                label="subject"
                 type="select"
                 options={data.form.subject.options}
                 placeholder={data.form.subject.placeholder}
                 className="w-full mt-4"
               />
               <Input
+                label="message"
                 type="textarea"
                 placeholder={data.form.messagePlaceholder}
                 className="mt-4 w-full"
