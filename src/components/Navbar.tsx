@@ -12,16 +12,16 @@ const Navbar = () => {
   const menuItems = ["About", "Services", "Pricing", "Blog"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const onMenuClick = (
-    e: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  const closeMenu = () => setIsMenuOpen(false);
+
+  const onMenuClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     const sectionName = e.currentTarget.textContent;
     const section = document.getElementById(sectionName?.toLowerCase());
 
     if (section) section.scrollIntoView({ behavior: "smooth" });
-    if (isMenuOpen) setIsMenuOpen(false);
+    if (isMenuOpen) closeMenu();
   };
 
   return (
@@ -54,7 +54,9 @@ const Navbar = () => {
                 className="text text-3xl lg:text-base text-white hover:opacity-75 transition"
                 key={item}
               >
-                <Link to={`#${item.toLowerCase()}`}>{item}</Link>
+                <Link to={`#${item.toLowerCase()}`} onClick={closeMenu}>
+                  {item}
+                </Link>
               </li>
             ))}
           </ul>
