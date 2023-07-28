@@ -87,7 +87,7 @@ const Features = () => {
                     <PocketKnifeIcon />
                   </div>
                 )}
-                <h3 className="h4 pt-[41px]">{item.heading}</h3>
+                <p className="h4 pt-[41px]">{item.heading}</p>
                 <p className="text pt-[19px]">{item.description}</p>
               </li>
             ))}

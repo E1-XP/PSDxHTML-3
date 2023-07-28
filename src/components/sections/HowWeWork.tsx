@@ -32,10 +32,10 @@ const HowWeWork = () => {
         <ul className="flex flex-col gap-8 mt-[72px] md:mt-16">
           {data.features.map((item) => (
             <li key={item.value} className="flex">
-              <h4 className="flex items-center h4">
+              <p className="flex items-center h4">
                 <span className="block h1 min-w-[100px] ">{item.value}</span>{" "}
                 {item.description}
-              </h4>
+              </p>
             </li>
           ))}
         </ul>

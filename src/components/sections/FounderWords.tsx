@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const FounderWords = () => {
   const data = {
     tagText: "Founder Words",
-    heading:
+    quoteText:
       "Digital agency is a business you hire to outsource your digital marketing efforts",
     author: "Ren Delan",
     occupation: "Founder",
@@ -29,9 +29,9 @@ const FounderWords = () => {
             placeholder="blurred"
           />
           <h2 className="h5 z-10">{data.tagText}</h2>
-          <h3 className="h4 lg:h3 !text-white mt-[29px] md:mt-[33px] z-10">
-            {data.heading}
-          </h3>
+          <p className="h4 lg:h3 !text-white mt-[29px] md:mt-[33px] z-10">
+            {data.quoteText}
+          </p>
           <p className="text-big text-white pt-[23px] md:pt-[44px]">
             {data.author}
           </p>

@@ -62,7 +62,7 @@ const Accordion = ({ data }: Props) => {
                 isOpened[i] ? "pb-[19px] lg:pb-[35px]" : "pb-[39px]"
               } pr-7 lg:pr-[34px] justify-between items-start`}
             >
-              <h4 className="h4">{item.title}</h4>
+              <p className="h4">{item.title}</p>
               <button
                 className="bg-orange rounded-full flex items-center justify-center"
                 onClick={(e) => onClickHandler(e, i)}

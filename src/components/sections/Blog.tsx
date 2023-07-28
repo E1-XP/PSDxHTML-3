@@ -78,8 +78,8 @@ const Blog = () => {
               alt={item.heading}
               className="pointer-events-none"
             />
-            <h4 className="text-big mt-[26px]">{item.tagText}</h4>
-            <h5 className="h4 mt-[15px]">{item.heading}</h5>
+            <p className="text-big mt-[26px]">{item.tagText}</p>
+            <p className="h4 mt-[15px]">{item.heading}</p>
             <span className="text block mt-[15px]">
               {format(item.date, "d MMM, yyyy")}
             </span>

@@ -75,13 +75,13 @@ const Awards = () => {
             <div className="flex flex-col md:flex-row items-center justify-between py-5 pt-[31px] md:pt-4 md:py-4">
               <div className="flex flex-col md:flex-row items-center gap-[26px] md:gap-6 basis-1/3">
                 <GatsbyImage image={item.data} alt={item.projectName} />
-                <h4 className="text-big">{item.projectName}</h4>
+                <p className="text-big">{item.projectName}</p>
               </div>
               <span className="text opacity-[0.64]">
                 {format(item.date, "d MMM, yyyy")}
               </span>
               <div className="flex flex-col md:flex-row items-center justify-end md:gap-6 basis-1/3 mt-4 md:mt-0">
-                <h4 className="text">{item.organization}</h4>
+                <p className="text">{item.organization}</p>
                 <img src={item.organizationData} alt={item.organization} />
               </div>
             </div>

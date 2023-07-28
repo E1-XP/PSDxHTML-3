@@ -104,7 +104,7 @@ const Service = () => {
               <div className="h-20 w-20 bg-orange rounded-full flex items-center justify-center">
                 <item.icon />
               </div>
-              <h4 className="h4 pt-[41px]">{item.title}</h4>
+              <p className="h4 pt-[41px]">{item.title}</p>
               <p className="text pt-[19px]">{item.paragraph}</p>
               <Link
                 to="#"

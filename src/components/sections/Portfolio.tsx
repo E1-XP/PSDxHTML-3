@@ -103,7 +103,7 @@ const Portfolio = () => {
                 <span className="text bg-white rounded-[19px] px-4 pt-[5px] pb-[1px]">
                   {item.category}
                 </span>
-                <h4 className="h3 text-white">{item.name}</h4>
+                <p className="h3 text-white">{item.name}</p>
               </div>
             </li>
           ))}
@@ -125,7 +125,7 @@ const Portfolio = () => {
           />
           <div className="pt-[92px] sm:pb-[64px] ml-7 sm:ml-[100px] sm:max-w-[248px]">
             <h2 className="h5">{sectionData.banner.tagText}</h2>
-            <h3 className="h4 mt-[13px]">{sectionData.banner.heading}</h3>
+            <p className="h4 mt-[13px]">{sectionData.banner.heading}</p>
             <Button className="mt-[23px]">
               {sectionData.banner.buttonText}
             </Button>

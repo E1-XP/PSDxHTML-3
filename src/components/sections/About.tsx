@@ -45,7 +45,7 @@ const AboutSection = () => {
             key={stat.description}
             className="border border-sandyAccent grow pl-12 pt-[45px] pb-[38px] flex flex-col gap-[13px] first-of-type:rounded-t-md last-of-type:rounded-b-md md:first-of-type:rounded-t-none md:last-of-type:rounded-b-none md:first-of-type:!rounded-l-md md:last-of-type:!rounded-r-md border-b-0 last-of-type:border-b md:border-b md:border-r-0 md:last-of-type:border-r"
           >
-            <h4 className="h3">{stat.value}</h4>
+            <p className="h3">{stat.value}</p>
             <p className="text-big">{stat.description}</p>
           </li>
         ))}

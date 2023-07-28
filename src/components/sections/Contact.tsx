@@ -95,7 +95,7 @@ const Contact = () => {
                 <span className="bg-orange h-16 w-16 rounded-full flex items-center justify-center">
                   <item.icon />
                 </span>
-                <h4 className="h5">{item.heading}</h4>
+                <p className="h5">{item.heading}</p>
               </div>
               <p className="text-big mt-[26px]">{item.text}</p>
             </div>
