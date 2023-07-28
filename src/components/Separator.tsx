@@ -1,4 +1,5 @@
 import * as React from "react";
+import { twMerge } from "tailwind-merge";
 
 interface Props {
   asComponent?: boolean; // or as section otherwise
@@ -8,8 +9,8 @@ interface Props {
 
 const SeparatorLine = ({ asComponent, wrapperClassName, className }: Props) => {
   return (
-    <div className={`${asComponent ? "" : "wrapper"} ${wrapperClassName}`}>
-      <div className={`border-b border-sandyAccent ${className}`}></div>
+    <div className={twMerge(asComponent ? "" : "wrapper", wrapperClassName)}>
+      <div className={twMerge("border-b border-sandyAccent", className)}></div>
     </div>
   );
 };

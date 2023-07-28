@@ -1,14 +1,17 @@
 import * as React from "react";
+import { twMerge } from "tailwind-merge";
 import Select, {
   DropdownIndicatorProps,
   IndicatorSeparatorProps,
   components,
 } from "react-select";
+const { DropdownIndicator: DropdownIndicatorComp } = components;
 
 import Triangle from "./icons/Triangle";
 
 interface Option {
-  [key: string]: any;
+  value: string;
+  label: string;
 }
 
 interface Props {
@@ -22,11 +25,11 @@ interface Props {
 
 const DropdownIndicator = (props: DropdownIndicatorProps) => {
   return (
-    <components.DropdownIndicator {...props}>
+    <DropdownIndicatorComp {...props}>
       <div className="p-[8px]">
         <Triangle />
       </div>
-    </components.DropdownIndicator>
+    </DropdownIndicatorComp>
   );
 };
 
@@ -54,7 +57,11 @@ const input = ({
         <textarea
           id={label}
           placeholder={placeholder}
-          className={`${commonStyle} py-[9px] px-4 resize-none ${className}`}
+          className={twMerge(
+            commonStyle,
+            "py-[9px] px-4 resize-none",
+            className
+          )}
           rows={3}
         />
       </>
@@ -70,7 +77,7 @@ const input = ({
         <Select
           id={label}
           options={options}
-          className={`text ${className}`}
+          className={twMerge("text", className)}
           defaultValue={defaultValue}
           components={{ DropdownIndicator, IndicatorSeparator }}
           placeholder={placeholder}
@@ -108,7 +115,11 @@ const input = ({
         id={label}
         type={type || "text"}
         placeholder={placeholder}
-        className={`${commonStyle} h-12 px-4 pt-[9px] pb-[7px] ${className}`}
+        className={twMerge(
+          commonStyle,
+          "h-12 px-4 pt-[9px] pb-[7px]",
+          className
+        )}
       />
     </>
   );

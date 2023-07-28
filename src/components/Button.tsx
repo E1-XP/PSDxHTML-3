@@ -1,4 +1,5 @@
 import * as React from "react";
+import { twMerge } from "tailwind-merge";
 
 type Variants = "primary" | "secondary";
 
@@ -30,7 +31,7 @@ const Button = ({
 
   return (
     <button
-      className={`${styles.common} ${styles[variant]} ${className}`}
+      className={twMerge(styles.common, styles[variant], className)}
       onClick={onClick}
     >
       {children}

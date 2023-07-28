@@ -6,12 +6,14 @@ import { Link } from "gatsby";
 import Button from "./Button";
 import Hamburger from "./Hamburger";
 
+import Logo from "./../images/logo.svg";
+
 const Navbar = () => {
   const menuItems = ["About", "Services", "Pricing", "Blog"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const onMenuClick = (
-    e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
+    e: React.MouseEvent<HTMLButtonElement>
   ) => {
     e.preventDefault();
 
@@ -30,12 +32,11 @@ const Navbar = () => {
         }`}
       >
         <Link to="/" className="">
-          <h1 className="flex gap-3.5 items-center h4 text-white z-50">
-            <StaticImage
-              src="../images/logo.svg"
+          <h1 className="flex gap-3.5 items-center h4 text-white z-50 w-max">
+            <img
+              src={Logo}
               alt="Agency"
               className="pointer-events-none w-12 h-12"
-              placeholder="blurred"
             />
             Agency
           </h1>
@@ -64,7 +65,7 @@ const Navbar = () => {
         <Hamburger
           isOpen={isMenuOpen}
           setIsOpen={setIsMenuOpen}
-          className="block lg:hidden z-50"
+          className="flex lg:hidden z-50"
         />
       </nav>
       <div className={isMenuOpen ? "max-lg:h-20" : ""}></div>
