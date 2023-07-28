@@ -3,23 +3,17 @@ import * as React from "react";
 const StarIcon = ({ className }: { className?: string }) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={`icon icon-tabler icon-tabler-star-filled ${className}`}
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
+      width="24"
+      height="22"
+      viewBox="0 0 24 22"
       fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path
-        d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
-        strokeWidth={0}
-        fill="currentColor"
-      ></path>
+        d="M12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18Z"
+        fill="#F6D021"
+      />
     </svg>
   );
 };
