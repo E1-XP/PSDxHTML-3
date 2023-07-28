@@ -29,7 +29,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Header />
       <main>
         <CompanyList />
-        <SeparatorLine/>
+        <SeparatorLine />
         <AboutSection />
         <HowWeWork />
         <SeparatorLine />
@@ -48,7 +48,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <SeparatorLine />
         <Newsletter />
         <Contact />
-        <ContactBanner/>
+        <ContactBanner />
       </main>
       <Footer />
     </>
@@ -57,4 +57,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Agency</title>;
+export const Head: HeadFC = () => (
+  <>
+    <html lang="en" />
+    <title>Agency</title>
+  </>
+);

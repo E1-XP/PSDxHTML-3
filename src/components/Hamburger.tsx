@@ -10,7 +10,7 @@ interface Props {
 const Hamburger = ({ className, isOpen, setIsOpen }: Props) => {
   return (
     <button
-      id="hamburger-menu"
+      aria-label="Hamburger menu"
       className={twMerge(
         "h-12 w-12 p-4 rounded-lg border border-buttonOutline flex flex-col items-center justify-center gap-1",
         className

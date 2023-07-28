@@ -66,6 +66,7 @@ const Accordion = ({ data }: Props) => {
               <button
                 className="bg-orange rounded-full flex items-center justify-center"
                 onClick={(e) => onClickHandler(e, i)}
+                aria-label="Arrow down"
               >
                 <ArrowDown
                   className={`${isOpened[i] ? "rotate-180" : ""} transition`}
